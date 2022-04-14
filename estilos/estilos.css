@@ -425,13 +425,13 @@ footer h4{
 }
 
 #imagen-biang-1{
-    background-image: url(/multimedia/caracter-biang-2.jpg);
+    background-image: url(../multimedia/caracter-biang-2.jpg);
     background-size: contain;
     grid-column: 1 / 3;
     grid-row: 3 / 3;
 }
 #imagen-biang-2{
-    background-image: url(/multimedia/caracter-biang.jpg);
+    background-image: url(../multimedia/caracter-biang.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 2 / 3;
@@ -463,7 +463,7 @@ footer h4{
 }
 
 #imagen-nosotros{
-    background-image:url(/multimedia/Post7.jpg);
+    background-image:url(../multimedia/Post7.jpg);
     background-size:contain;
     background-repeat: no-repeat;
     min-height: 20rem;
@@ -473,7 +473,7 @@ footer h4{
 }
 
 #imagen-nosotros-2{
-    background-image:url(/multimedia/Post8.jpg);
+    background-image:url(../multimedia/Post8.jpg);
     background-size:contain;
     background-repeat: no-repeat;
     margin-left: 40vw;
@@ -522,6 +522,7 @@ footer h4{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .tabla-eventos{
     border-collapse: collapse;
     margin: 2rem;
@@ -547,7 +548,25 @@ footer h4{
 .titulo-peli{
     font-size: 1.7rem;
 }
-
+#kwaidan{
+    background-image: url(../multimedia/kwaidan.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 270px;
+    width: 270px;
+}
+#wong{
+    background-image: url(../multimedia/days-of-being-wild.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 270px;
+}
+#brighter{
+    background-image: url(../multimedia/brighter.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 270px;
+}
 .flex-productos{
     display: flex;
     width: 75vw;
@@ -587,7 +606,7 @@ footer h4{
 }
 
 #dumpling-soya{
-    background-image: url(/multimedia/soya.png);
+    background-image: url(../multimedia/soya.png);
     background-repeat: no-repeat;
     background-size: contain;
     min-width: 380px;
@@ -596,7 +615,7 @@ footer h4{
 
 #dumpling-tofu{
    
-    background-image: url(/multimedia/tofu.png);
+    background-image: url(../multimedia/tofu.png);
     background-size: contain;
     background-repeat: no-repeat;
     min-width: 380px;
@@ -605,7 +624,7 @@ footer h4{
 
 #dumpling-champi{
     
-    background-image: url(/multimedia/champi.png);
+    background-image: url(../multimedia/champi.png);
     background-size: contain;
     background-repeat: no-repeat;
     min-width: 380px;
@@ -614,7 +633,7 @@ footer h4{
 
 #dumpling-zapallo{
     
-    background-image: url(/multimedia/zapallo.png);
+    background-image: url(../multimedia/zapallo.png);
     background-size: contain;
     background-repeat: no-repeat;
     min-width: 380px;
@@ -883,7 +902,7 @@ footer h4{
 /* -----------FORMULARIO CONTACTO---------------*/
 
 #container-contacto {
-    background-image: url(/multimedia/contacto.jpg);
+    background-image: url(../multimedia/contacto.jpg);
     height: 70vh;
     margin-top: 3vh;
     background-position: center;
