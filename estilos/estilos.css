@@ -18,6 +18,7 @@ html {
 
 h1{
     font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
 }
 
 h2 {
@@ -156,6 +157,13 @@ header a{
 /*-------NAV MEDIA QUERIES---------- */
 
 @media screen and (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
 
     /*  Barra navegacion */
     .container-logo{ 
@@ -349,6 +357,15 @@ footer h4{
     grid-row: 2 / 4;
     z-index: 4;
 }
+
+@media screen and (max-width: 768px){
+    .container{
+        margin: 0;
+    }
+    .logo-interno{
+        max-width: 350px;
+    }
+}
 /*-------------------ABOUT US--------------------*/
 
 .flex-about-us{
@@ -438,11 +455,6 @@ footer h4{
     grid-row: 2 / 2;
     background-color: black;
 }
-.container-nosotros{
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-}
 
 .presentacion{
     display: flex;
@@ -491,8 +503,8 @@ footer h4{
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-left: 9.5vw;
-    
 }
+
 @media screen and (max-width: 768px) {
     .seccion-nosotros{
         flex-direction: column;
@@ -606,38 +618,23 @@ footer h4{
 }
 
 #dumpling-soya{
-    background-image: url(../multimedia/soya.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-width: 380px;
-    min-height: 375px;
+    width: 380px;
+    height: 375px;
 }
 
 #dumpling-tofu{
-   
-    background-image: url(../multimedia/tofu.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-width: 380px;
-    min-height: 375px;
+    width: 380px;
+    height: 375px;
 }
 
 #dumpling-champi{
-    
-    background-image: url(../multimedia/champi.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-width: 380px;
-    min-height: 375px;
+    width: 380px;
+    height: 375px;
 }
 
 #dumpling-zapallo{
-    
-    background-image: url(../multimedia/zapallo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-width: 380px;
-    min-height: 375px;
+    width: 380px;
+    height: 375px;
 }
 
 .imagen-producto{
@@ -710,12 +707,13 @@ footer h4{
     border-radius: 12px;
 }
 
-.entrada-texto h2{
+.entrada-texto h3{
     font-size: 1.3rem;
 }
 
-.entrada-texto h3{
+.entrada-texto h4{
     font-size: 1.1rem;
+    color: whitesmoke;
 }
 
 .entrada-texto{

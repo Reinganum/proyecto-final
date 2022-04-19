@@ -1,0 +1,135 @@
+.flex-about-us{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
+    background-color:map-get($map: $paleta, $key: 'naranjo' );;
+    margin-bottom: 2rem;
+    .columna-about-us p{
+        max-inline-size: 24rem;
+        margin: 2rem;
+        font-weight: bold;
+    }
+    
+    .columna-about-us.dos{
+        background-color: map-get($map: $paleta, $key: 'verde-oscuro' );;
+        max-inline-size: 28rem;
+        color: blanchedalmond;
+    }
+}
+
+
+
+.grid-origen{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    height: 100vh;
+    width: 80vw;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 0.5fr 0.5fr;
+
+    #color-1{
+        background-color: map-get($map: $paleta, $key: 'verde-oscuro' );;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+    #color-2{
+        background-color: map-get($map: $paleta, $key: 'rojo-oscuro' );;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    
+    }
+    
+    #color-2 h1{
+        font-size: 6rem;
+        color:map-get($map: $paleta, $key: 'naranjo' );;
+        margin: auto;
+    }
+    
+    #color-2 h3{
+        color:map-get($map: $paleta, $key: 'rosado' );;
+        margin-left: 4rem;
+    }
+    
+    #color-3{
+        background-color: map-get($map: $paleta, $key: 'amarillo' );;
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+    #color-4{
+        background-color: map-get($map: $paleta, $key: 'naranjo' );;
+        grid-column: 3 / 4;
+        grid-row: 2 / 5;
+    }
+    #color-5{
+        background-color: map-get($map: $paleta, $key: 'rojo-claro' );;
+        grid-column: 1 / 3;
+        grid-row: 4 / 4;
+    }
+    
+    #imagen-biang-1{
+        background-image: url(../multimedia/caracter-biang-2.jpg);
+        background-size: contain;
+        grid-column: 1 / 3;
+        grid-row: 3 / 3;
+    }
+    #imagen-biang-2{
+        background-image: url(../multimedia/caracter-biang.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        grid-column: 2 / 3;
+        grid-row: 2 / 2;
+        background-color: black;
+    }
+}
+
+.seccion-nosotros{
+    display: flex;
+    width: max-content;
+    min-height: max-content;
+    width: 80vw;
+    background-color:map-get($map: $paleta, $key: 'verde-oscuro' );
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 9.5vw;
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        min-height: fit-content;
+        width: 100vw;
+        color: whitesmoke;
+        max-inline-size: 20rem;
+        text-align: justify;
+        padding: 2rem 0rem 2rem 0rem;
+        flex-wrap: wrap;
+        h2{
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            font-size: 2rem;
+        }
+        #imagen-nosotros{
+            background-image:url(../multimedia/Post7.jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+            min-height: 20rem;
+            min-width: 20rem;
+            border-radius: 100%;
+            margin: auto;
+        }
+        
+        #imagen-nosotros-2{
+            background-image:url(../multimedia/Post8.jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+            margin-left: 40vw;
+            min-height: 20rem;
+            min-width: 20rem;
+            border-radius: 100%;
+            margin: auto;
+        }
+    }
+}
+

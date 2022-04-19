@@ -1,0 +1,124 @@
+/*  Barra navegacion */
+@media screen and (max-width: 768px) {
+
+    /*  Barra navegacion */
+    
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+
+    .nav-container{ 
+        flex-direction: column;
+        .nav-menu-items{
+            flex-direction: column;
+            .link-nav{
+                pointer-events: none;
+                .icon.ion-md-arrow-dropright{
+                    display: inline;
+                }
+                .icon.ion-ios-arrow-down{
+                    display: none;
+                }
+            }
+            #nav-item-productos{
+                &:hover #submenu-productos{
+                    @include hover;
+                }
+            }
+            #nav-item-blog{
+                &:hover #submenu-blog{
+                    @include hover;
+                }
+            }
+            #nav-item-contacto{
+                &:hover #submenu-contacto{
+                    @include hover;
+                }
+            }
+        }    
+    }
+    @media screen and (max-width: 768px) {
+        .social-media{
+            margin-left: 37%;
+            margin-top: 3rem;
+            } 
+        .logo a{
+            margin-right: 4rem;
+        }
+    }
+    /* FOOTER */
+    footer{
+        width: 100vw;
+        .container-footer{
+            flex-direction: column;
+            flex-grow: auto;
+            .footer-columna{
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+}
+.logo{
+    align-self: center;
+}
+/* Blog */ 
+
+@media screen and (max-width: 768px){
+    .entrada-texto{
+        text-align: center;
+        max-inline-size: 22rem;
+        @include border(12px);
+    }
+}
+
+/* index */
+
+@media screen and (max-width: 768px){
+    .container{
+        margin: 0;
+    }
+    .logo-interno{
+        max-width: 350px;
+    }
+}
+
+/* NOSOTROS */
+
+@media screen and (max-width: 768px) {
+    .seccion-nosotros{
+        flex-direction: column;
+    }
+
+    .flex-about-us{
+        flex-direction: column;
+    }
+    .presentacion{
+        margin: auto;
+        p{
+            max-inline-size: 17rem;
+            margin-left: 1rem;
+        }
+    }
+}
+/* PRODUCTOS */
+
+@media screen and (max-width: 768px) {
+    .galeria-productos{
+        width: 100vw;
+    }
+    .flex-productos{
+        width: 100vw;
+    }
+    td{
+        display: block;
+        margin: auto;
+    }
+
+    thead{
+        display: none;
+    }
+}

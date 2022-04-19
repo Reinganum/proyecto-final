@@ -1,6 +1,7 @@
 /* CLASES GLOBALES */
 @import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -9,23 +10,29 @@ html {
   font-size: 62,5%;
   height: 100%; }
 
+p {
+  font-family: 'Lora', serif; }
+
 h2 {
   color: #fff; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Lora', serif; }
 
 li {
   list-style: none; }
 
 body {
   background: black;
-  font-family: 'roboto' sans-serif;
-  z-index: 1; }
+  z-index: 1;
+  overflow-x: hidden; }
 
 /* PALETA DEL SITIO */
 /* colores principales*/
 /* colores auxiliares */
+/* PALETA DEL SITIO */
+/* colores principales*/
 /* ---------------BARRA NAVEGACION---------------------*/
 header a {
   color: whitesmoke; }
@@ -36,19 +43,14 @@ header a {
   justify-content: space-between;
   flex-wrap: wrap; }
   .nav-container .logo {
-    font-size: 1.6rem;
-    padding: 1rem 0;
-    font-family: 'Amaranth', sans-serif;
-    text-decoration: underline;
-    display: block;
-    margin-left: 5rem; }
+    background-image: url(../multimedia/logo-mini.png);
+    background-size: cover;
+    height: 100px;
+    width: 120px; }
   .nav-container .nav-menu-items {
     display: flex;
     justify-content: space-evenly;
     text-align: center; }
-    .nav-container .nav-menu-items .social-media {
-      padding: 1.4rem 0rem;
-      margin-right: 5rem; }
     .nav-container .nav-menu-items .nav-menu-links {
       padding: 1rem;
       inline-size: 9rem; }
@@ -59,6 +61,10 @@ header a {
         color: white;
         border-radius: 1rem;
         height: fit-content; }
+
+.nav-container .social-media {
+  padding: 1rem 0rem;
+  margin-right: 5rem; }
 
 /* submenu productos */
 .submenu {
@@ -86,7 +92,7 @@ header a {
   margin-top: 1rem; }
 
 /* submenu ayuda */
-#nav-item-contacto:hover submenu-contacto {
+#nav-item-contacto:hover #submenu-contacto {
   display: block;
   position: absolute;
   background-color: black;
@@ -94,95 +100,12 @@ header a {
   line-height: 2rem;
   margin-top: 1rem; }
 
-main #titulo-blog {
-  background-color: #005d44;
-  color: whitesmoke;
-  width: 100vw;
-  text-align: center;
-  margin-top: 4rem;
-  padding: 1rem; }
-
-main .blog-temas {
-  background-color: #005d44;
-  color: whitesmoke;
-  width: 100vw;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  padding: 1rem; }
-
-main .blog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 2; }
-  main .blog .entrada {
-    background-repeat: no-repeat;
-    height: 50vh;
-    max-inline-size: 35rem;
-    max-width: 500px;
-    padding: 0.2rem;
-    margin: 0.2rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    border-radius: 12px; }
-    main .blog .entrada:hover .entrada-texto {
-      opacity: 1; }
-    main .blog .entrada:hover .btn-leer-mas {
-      opacity: 1;
-      background-color: black; }
-    main .blog .entrada .uno {
-      background-image: url("../multimedia/gajar.jpg"); }
-    main .blog .entrada .dos {
-      background-image: url("../multimedia/chilli-oil.jpg"); }
-    main .blog .entrada .tres {
-      background-image: url("../multimedia/kimono.jpg"); }
-    main .blog .entrada .entrada.cuatro {
-      background-image: url("../multimedia/spices.webp"); }
-    main .blog .entrada .entrada.cinco {
-      background-image: url("../multimedia/Goodbye-Dragon-Inn-780x470.jpg"); }
-    main .blog .entrada .entrada.seis {
-      background-image: url("../multimedia/kanazawa.JPG"); }
-    main .blog .entrada .entrada.siete {
-      background-image: url("../multimedia/muroxian.jpeg");
-      margin-bottom: 100px; }
-    main .blog .entrada .entrada-texto {
-      background-color: #ff7a2f;
-      padding: 5px;
-      font-size: 1rem;
-      opacity: 0;
-      transition: 1s;
-      width: 25rem; }
-      main .blog .entrada .entrada-texto h2 {
-        font-size: 1.3rem; }
-      main .blog .entrada .entrada-texto h3 {
-        font-size: 1.1rem; }
-    main .blog .entrada .btn-leer-mas {
-      background-color: black;
-      margin-left: 35%;
-      margin-top: 28%;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      font-size: 1,5rem;
-      border-radius: 12px;
-      opacity: 0;
-      transition: 1s; }
-      main .blog .entrada .btn-leer-mas:hover {
-        background-color: transparent;
-        color: black;
-        border-color: black;
-        font-weight: bold;
-        border-style: solid; }
-
 /* --------------------Footer----------------*/
 footer {
   background-color: #ff7a2f;
   padding: 1rem;
   margin-top: 2rem;
-  color: #7a0204;
-  width: 100vw; }
+  color: #7a0204; }
   footer a {
     color: #7a0204; }
   footer h4 {
@@ -204,6 +127,10 @@ footer {
 /*  Barra navegacion */
 @media screen and (max-width: 768px) {
   /*  Barra navegacion */
+  html, body {
+    overflow-x: hidden; }
+  body {
+    position: relative; }
   .nav-container {
     flex-direction: column; }
     .nav-container .nav-menu-items {
@@ -214,9 +141,6 @@ footer {
           display: inline; }
         .nav-container .nav-menu-items .link-nav .icon.ion-ios-arrow-down {
           display: none; }
-      .nav-container .nav-menu-items .social-media {
-        margin: auto;
-        margin-top: 3rem; }
       .nav-container .nav-menu-items #nav-item-productos:hover #submenu-productos {
         text-align: center;
         display: block;
@@ -246,7 +170,17 @@ footer {
         width: 9.5rem;
         margin-left: 10rem;
         border-radius: 0 1rem 1rem 1rem;
-        line-height: 2rem; }
+        line-height: 2rem; } }
+
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .social-media {
+    margin-left: 37%;
+    margin-top: 3rem; }
+  .logo a {
+    margin-right: 4rem; } }
+
+@media screen and (max-width: 768px) {
+  /* FOOTER */
   footer {
     width: 100vw; }
     footer .container-footer {
@@ -255,3 +189,401 @@ footer {
       footer .container-footer .footer-columna {
         margin: auto;
         text-align: center; } }
+
+.logo {
+  align-self: center; }
+
+/* Blog */
+@media screen and (max-width: 768px) {
+  .entrada-texto {
+    text-align: center;
+    max-inline-size: 22rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px; } }
+
+/* index */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0; }
+  .logo-interno {
+    max-width: 350px; } }
+
+/* NOSOTROS */
+@media screen and (max-width: 768px) {
+  .seccion-nosotros {
+    flex-direction: column; }
+  .flex-about-us {
+    flex-direction: column; }
+  .presentacion {
+    margin: auto; }
+    .presentacion p {
+      max-inline-size: 17rem;
+      margin-left: 1rem; } }
+
+/* PRODUCTOS */
+@media screen and (max-width: 768px) {
+  .galeria-productos {
+    width: 100vw; }
+  .flex-productos {
+    width: 100vw; }
+  td {
+    display: block;
+    margin: auto; }
+  thead {
+    display: none; } }
+
+main #titulo-blog, main .blog-temas {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  padding: 1rem;
+  margin-top: 4rem;
+  background-color: #c66a73;
+  color: whitesmoke; }
+
+main .blog-temas {
+  color: whitesmoke;
+  background-color: #005d44;
+  margin-top: 1rem; }
+
+main .blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2; }
+  main .blog .entrada {
+    background-repeat: no-repeat;
+    height: 50vh;
+    max-inline-size: 35rem;
+    max-width: 500px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px; }
+    main .blog .entrada:hover .entrada-texto {
+      opacity: 1; }
+    main .blog .entrada:hover .btn-leer-mas {
+      opacity: 1;
+      background-color: black; }
+    main .blog .entrada .uno {
+      background-image: url("../multimedia/gajar.jpg"); }
+    main .blog .entrada .dos {
+      background-image: url("../multimedia/chilli-oil.jpg"); }
+    main .blog .entrada .tres {
+      background-image: url("../multimedia/kimono.jpg"); }
+    main .blog .entrada .entrada.cuatro {
+      background-image: url("../multimedia/spices.webp"); }
+    main .blog .entrada .entrada.cinco {
+      background-image: url("../multimedia/Goodbye-Dragon-Inn-780x470.jpg"); }
+    main .blog .entrada .entrada.seis {
+      background-image: url("../multimedia/kanazawa.JPG"); }
+    main .blog .entrada .entrada.siete {
+      background-image: url("../multimedia/muroxian.jpeg");
+      margin-bottom: 100px; }
+    main .blog .entrada .entrada-texto {
+      background-color: #ff7a2f;
+      padding: 5px;
+      font-size: 1rem;
+      opacity: 0;
+      transition: 1s;
+      width: 25rem; }
+      main .blog .entrada .entrada-texto h3 {
+        font-size: 1.3rem; }
+      main .blog .entrada .entrada-texto h4 {
+        font-size: 1.1rem;
+        color: whitesmoke; }
+    main .blog .entrada .btn-leer-mas {
+      background-color: black;
+      margin-left: 35%;
+      margin-top: 28%;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      font-size: 1,5rem;
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      opacity: 0;
+      transition: 1s; }
+      main .blog .entrada .btn-leer-mas:hover {
+        background-color: transparent;
+        color: black;
+        border-color: black;
+        font-weight: bold;
+        border-style: solid; }
+
+.flex-about-us {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  justify-content: center;
+  text-align: justify;
+  background-color: #ff7a2f;
+  margin-bottom: 2rem; }
+  .flex-about-us .columna-about-us p {
+    max-inline-size: 24rem;
+    margin: 2rem;
+    font-weight: bold; }
+  .flex-about-us .columna-about-us.dos {
+    background-color: #005d44;
+    max-inline-size: 28rem;
+    color: blanchedalmond; }
+
+.grid-origen {
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  height: 100vh;
+  width: 80vw;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 0.5fr 0.5fr; }
+  .grid-origen #color-1 {
+    background-color: #005d44;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; }
+  .grid-origen #color-2 {
+    background-color: #c11919;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1; }
+  .grid-origen #color-2 h1 {
+    font-size: 6rem;
+    color: #ff7a2f;
+    margin: auto; }
+  .grid-origen #color-2 h3 {
+    color: #ffbfbf;
+    margin-left: 4rem; }
+  .grid-origen #color-3 {
+    background-color: #f6b02d;
+    grid-column: 3 / 3;
+    grid-row: 1 / 1; }
+  .grid-origen #color-4 {
+    background-color: #ff7a2f;
+    grid-column: 3 / 4;
+    grid-row: 2 / 5; }
+  .grid-origen #color-5 {
+    background-color: #fb2020;
+    grid-column: 1 / 3;
+    grid-row: 4 / 4; }
+  .grid-origen #imagen-biang-1 {
+    background-image: url(../multimedia/caracter-biang-2.jpg);
+    background-size: contain;
+    grid-column: 1 / 3;
+    grid-row: 3 / 3; }
+  .grid-origen #imagen-biang-2 {
+    background-image: url(../multimedia/caracter-biang.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+    background-color: black; }
+
+.seccion-nosotros {
+  display: flex;
+  width: max-content;
+  min-height: max-content;
+  width: 80vw;
+  background-color: #005d44;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 9.5vw; }
+  .seccion-nosotros .presentacion {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    width: 100vw;
+    color: whitesmoke;
+    max-inline-size: 20rem;
+    text-align: justify;
+    padding: 2rem 0rem 2rem 0rem;
+    flex-wrap: wrap; }
+    .seccion-nosotros .presentacion h2 {
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      font-size: 2rem; }
+    .seccion-nosotros .presentacion #imagen-nosotros {
+      background-image: url(../multimedia/Post7.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      min-height: 20rem;
+      min-width: 20rem;
+      border-radius: 100%;
+      margin: auto; }
+    .seccion-nosotros .presentacion #imagen-nosotros-2 {
+      background-image: url(../multimedia/Post8.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 40vw;
+      min-height: 20rem;
+      min-width: 20rem;
+      border-radius: 100%;
+      margin: auto; }
+
+/*  ----------------INDEX-------------------*/
+.container {
+  margin: 5vw;
+  display: grid;
+  max-width: 90vw;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row: repeat(6, 1fr);
+  gap: 5px; }
+
+.container > div {
+  height: 35vh;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.container > div:nth-child(11) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 4; }
+
+.container > div:nth-child(12) {
+  grid-column: 5 / 6;
+  grid-row: 3 / 4; }
+
+.container > div:nth-child(8) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3; }
+
+.container > div:nth-child(9) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3; }
+
+.container > div:nth-child(12) {
+  grid-column: 3 / 4;
+  grid-row: 3 / 3; }
+
+.container > div:nth-child(17) {
+  grid-column: 5 / 6;
+  grid-row: 3 / 3; }
+
+.bg1 {
+  background: url(../multimedia/modificado1.jpg);
+  z-index: 3; }
+  .bg1 h1 {
+    color: whitesmoke;
+    position: absolute;
+    padding: 4rem;
+    background-color: var(--verde-oscuro);
+    opacity: 0.6;
+    margin-top: -10.5rem; }
+
+.bg2 {
+  background: url(../multimedia/modificado2.png);
+  z-index: 2; }
+
+.logo-interno {
+  grid-column: 5 / 6;
+  grid-row: 2 / 4;
+  z-index: 4; }
+
+/* -------------PRODUCTOS-------------- */
+.titulo-galeria {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  padding: 1rem;
+  margin-top: 4rem;
+  background-color: #ff7a2f;
+  color: whitesmoke;
+  margin-bottom: 1rem; }
+
+.invitacion {
+  color: whitesmoke;
+  text-justify: center;
+  text-align: justify;
+  max-inline-size: 40rem;
+  margin: auto;
+  background-color: #005d44;
+  padding: 1rem; }
+
+.container-eventos {
+  display: flex;
+  width: 97vw;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .container-eventos .tabla-eventos {
+    border-collapse: collapse;
+    margin: 2rem;
+    min-width: 400px; }
+
+.tabla-eventos th,
+.tabla-eventos td {
+  padding: 1rem;
+  max-inline-size: 15rem;
+  text-align: justify; }
+
+.tabla-eventos tbody tr {
+  border-bottom: 1px solid #ffbfbf;
+  color: white; }
+
+.titulo-peli {
+  font-size: 1.7rem; }
+
+#kwaidan {
+  background-image: url(../multimedia/kwaidan.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 270px;
+  width: 270px; }
+
+#wong {
+  background-image: url(../multimedia/days-of-being-wild.jpg);
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 270px; }
+
+#brighter {
+  background-image: url(../multimedia/brighter.jpg);
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 270px; }
+
+.flex-productos {
+  display: flex;
+  width: 75vw;
+  margin: auto;
+  justify-content: center;
+  text-align: justify;
+  background-color: #005d44; }
+  .flex-productos .columna-productos p {
+    max-inline-size: 22rem;
+    margin: 2rem; }
+  .flex-productos .columna-productos h2 {
+    text-align: center;
+    max-inline-size: 20rem;
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive; }
+
+.galeria-productos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  min-height: fit-content;
+  width: 75vw;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0rem;
+  background-color: white; }
+  .galeria-productos #dumpling-soya {
+    width: 380px;
+    height: 375px; }
+  .galeria-productos #dumpling-tofu {
+    width: 380px;
+    height: 375px; }
+  .galeria-productos #dumpling-champi {
+    width: 380px;
+    height: 375px; }
+  .galeria-productos #dumpling-zapallo {
+    width: 380px;
+    height: 375px; }
+  .galeria-productos .imagen-producto {
+    margin: 1rem; }
+    .galeria-productos .imagen-producto:hover {
+      opacity: 0.5;
+      transition: 1s; }

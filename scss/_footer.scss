@@ -1,0 +1,36 @@
+/* --------------------Footer----------------*/
+footer{
+
+    background-color: map-get($map: $paleta, $key: 'naranjo' );
+    padding: 1rem;
+    margin-top: 2rem;
+    color: map-get($map: $paleta, $key: 'burdeo' );
+
+    a{
+        color: map-get($map: $paleta, $key: 'burdeo' );
+    }
+
+    h4{
+        font-size: 1.2rem;
+        line-height: 4rem;
+    }
+    .container-footer{
+        display: flex;
+        height: fit-content;
+        justify-content: space-evenly;
+        
+        .footer-columna{
+            display: flex;
+            flex-direction: column;
+            }
+        .footer-columna.rs{
+            display: inline-block;
+            }
+     
+    }
+    .derechos-reservados{
+        text-align: center;
+        padding-top: 2rem;
+        }   
+}
+
