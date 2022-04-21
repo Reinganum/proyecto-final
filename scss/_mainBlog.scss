@@ -2,12 +2,12 @@
 main{
     #titulo-blog {
         color: whitesmoke;
-        @include titulo(map-get($map: $paleta, $key: 'rosado-opaco' ), whitesmoke);
+        @include titulo(map-get($map: $paleta, $key: 'rosado-opaco'), whitesmoke);
     }
     .blog-temas{
         color: whitesmoke;
         @extend #titulo-blog;
-        background-color: map-get($map: $paleta, $key: 'verde-oscuro' );
+        background-color: map-get($map: $paleta, $key: 'verde-oscuro');
         margin-top: 1rem;
     }
     .blog{

@@ -112,23 +112,20 @@
         }
         #imagen-nosotros{
             background-image:url(../multimedia/Post7.jpg);
-            background-size:contain;
             background-repeat: no-repeat;
-            min-height: 20rem;
-            min-width: 20rem;
-            border-radius: 100%;
-            margin: auto;
+            background-size: contain;
+            min-width: 250px;
+            min-height: 320px;
+            @include border(100%)
         }
         
         #imagen-nosotros-2{
             background-image:url(../multimedia/Post8.jpg);
             background-size:contain;
             background-repeat: no-repeat;
-            margin-left: 40vw;
-            min-height: 20rem;
-            min-width: 20rem;
-            border-radius: 100%;
-            margin: auto;
+            min-width: 250px;
+            min-height: 320px;
+            @include border(100%)
         }
     }
 }

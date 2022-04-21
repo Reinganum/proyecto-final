@@ -14,6 +14,10 @@
         flex-direction: column;
         .nav-menu-items{
             flex-direction: column;
+            margin-top: 1rem;
+            .nav-menu-links{
+                margin-top: 0;
+            }
             .link-nav{
                 pointer-events: none;
                 .icon.ion-md-arrow-dropright{
@@ -41,12 +45,13 @@
         }    
     }
     @media screen and (max-width: 768px) {
-        .social-media{
+        #social-media{
             margin-left: 37%;
             margin-top: 3rem;
             } 
         .logo a{
             margin-right: 4rem;
+            ;
         }
     }
     /* FOOTER */
@@ -61,11 +66,14 @@
             }
         }
     }
+    .logo{
+        margin: 0;
+    }
 }
-.logo{
-    align-self: center;
-}
-/* Blog */ 
+
+
+
+/* BLOG */ 
 
 @media screen and (max-width: 768px){
     .entrada-texto{
@@ -73,9 +81,13 @@
         max-inline-size: 22rem;
         @include border(12px);
     }
+    #imagen-nosotros{
+        max-width: 300px;
+    }
 }
 
-/* index */
+
+/* INDEX */
 
 @media screen and (max-width: 768px){
     .container{
@@ -92,7 +104,6 @@
     .seccion-nosotros{
         flex-direction: column;
     }
-
     .flex-about-us{
         flex-direction: column;
     }
@@ -122,3 +133,4 @@
         display: none;
     }
 }
+

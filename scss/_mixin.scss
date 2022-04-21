@@ -26,11 +26,30 @@
     display: block;
     position: absolute;
     background-color:$verde-oscuro;
-    margin-top: -1rem;
+    margin-top: -2.1rem;
     width: 9.5rem;
     margin-left:10rem;
     border-radius:0 1rem 1rem 1rem;
-    line-height: 2rem;
 }
-
+@mixin fadeIn{
+    animation: fadeIn linear 3s;
+    -webkit-animation: fadeIn linear 3s infinite alternate;;
+    -moz-animation: fadeIn linear 3s infinite alternate;;
+    -o-animation: fadeIn linear 3s infinite alternate;;
+    -ms-animation: fadeIn linear 3s infinite alternate;;
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+}
 

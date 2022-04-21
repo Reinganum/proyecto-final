@@ -8,6 +8,14 @@ footer{
 
     a{
         color: map-get($map: $paleta, $key: 'burdeo' );
+        &:hover{
+            font-weight: bold;
+        }
+        ion-icon{
+            &:hover{
+                opacity: 0.6;
+            }
+        }
     }
 
     h4{
