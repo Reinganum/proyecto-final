@@ -28,7 +28,7 @@ header{
             margin-top: 1rem;
             background: linear-gradient(to left, map-get($map: $paleta, $key: 'verde-oscuro') 50%, map-get($map: $paleta, $key: 'verde-claro') 50%) right;
             background-size: 200%;
-            opacity: 0.8;
+            opacity: 1;
             transition: .5s ease-out;
             &:hover{
                 background-position: left;
