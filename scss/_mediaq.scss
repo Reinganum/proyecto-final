@@ -85,8 +85,29 @@
         max-width: 300px;
     }
 }
+@media screen and (min-width: 900px){
+    .entrada-texto{
+        opacity: 0;
+        transition: 1s;
+        width: 25rem;
+        }
+    }
 
-
+@media screen and (min-width: 900px){
+    .btn-leer-mas{
+        background-color: transparent; 
+        margin-left: 35%;
+        margin-top: 28%;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        font-size: 1,5rem;
+        @include border(12px);
+        opacity:0;
+        transition: 1s;
+    }
+}    
+   
 /* INDEX */
 
 @media screen and (max-width: 768px){
@@ -123,6 +144,7 @@
     }
     .flex-productos{
         width: 100vw;
+        flex-direction: column;
     }
     td{
         display: block;

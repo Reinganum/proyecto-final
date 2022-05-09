@@ -15,15 +15,26 @@
 }
 .container-eventos{
     display: flex;
-    width: 97vw;
+    margin: auto;
+    margin-top: 2rem;
+    width: 80vw;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: purple;
+    opacity: 0.8;
     .tabla-eventos{
         border-collapse: collapse;
         margin: 2rem;
         min-width: 400px;
-        
     }
+}
+
+.tabla-eventos th{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    text-shadow:currentColor, 1rem;
 }
 
 .tabla-eventos th,
@@ -31,14 +42,27 @@
     padding: 1rem;
     max-inline-size: 15rem;
     text-align: justify;
+    li{
+        list-style: circle;
+        line-height: 2rem;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+    }
 }
+.fecha{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    text-shadow: 4px 4px black;
+}
+
 
 .tabla-eventos tbody tr{
     border-bottom: 1px solid map-get($map: $paleta, $key: 'rosado');
     color: white;
 }
 .titulo-peli{
-    font-size: 1.7rem;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
 }
 #kwaidan{
     background-image: url(../multimedia/kwaidan.jpg);
@@ -69,9 +93,13 @@
     .columna-productos p{
         max-inline-size: 22rem;
         margin: 2rem;
+        .bold{
+            font-weight: bold;
+        }
     }
     .columna-productos h2{
-        text-align: center;
+        margin: auto;
+        margin-top: 2rem;
         max-inline-size: 20rem;
         color: whitesmoke;
         font-family: 'Bebas Neue', cursive;

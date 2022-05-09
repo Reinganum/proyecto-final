@@ -62,7 +62,7 @@ header a {
       margin-top: 1rem;
       background: linear-gradient(to left, #005d44 50%, #90d88e 50%) right;
       background-size: 200%;
-      opacity: 0.8;
+      opacity: 1;
       transition: .5s ease-out; }
       .nav-container .nav-menu-items .nav-menu-links:hover {
         background-position: left; }
@@ -134,116 +134,6 @@ footer {
     text-align: center;
     padding-top: 2rem; }
 
-/*  Barra navegacion */
-@media screen and (max-width: 768px) {
-  /*  Barra navegacion */
-  html, body {
-    overflow-x: hidden; }
-  body {
-    position: relative; }
-  .nav-container {
-    flex-direction: column; }
-    .nav-container .nav-menu-items {
-      flex-direction: column;
-      margin-top: 1rem; }
-      .nav-container .nav-menu-items .nav-menu-links {
-        margin-top: 0; }
-      .nav-container .nav-menu-items .link-nav {
-        pointer-events: none; }
-        .nav-container .nav-menu-items .link-nav .icon.ion-md-arrow-dropright {
-          display: inline; }
-        .nav-container .nav-menu-items .link-nav .icon.ion-ios-arrow-down {
-          display: none; }
-      .nav-container .nav-menu-items #nav-item-productos:hover #submenu-productos {
-        text-align: center;
-        display: block;
-        position: absolute;
-        background-color: #005d44;
-        margin-top: -2.1rem;
-        width: 9.5rem;
-        margin-left: 10rem;
-        border-radius: 0 1rem 1rem 1rem; }
-      .nav-container .nav-menu-items #nav-item-blog:hover #submenu-blog {
-        text-align: center;
-        display: block;
-        position: absolute;
-        background-color: #005d44;
-        margin-top: -2.1rem;
-        width: 9.5rem;
-        margin-left: 10rem;
-        border-radius: 0 1rem 1rem 1rem; }
-      .nav-container .nav-menu-items #nav-item-contacto:hover #submenu-contacto {
-        text-align: center;
-        display: block;
-        position: absolute;
-        background-color: #005d44;
-        margin-top: -2.1rem;
-        width: 9.5rem;
-        margin-left: 10rem;
-        border-radius: 0 1rem 1rem 1rem; } }
-
-@media screen and (max-width: 768px) and (max-width: 768px) {
-  #social-media {
-    margin-left: 37%;
-    margin-top: 3rem; }
-  .logo a {
-    margin-right: 4rem; } }
-
-@media screen and (max-width: 768px) {
-  /* FOOTER */
-  footer {
-    width: 100vw; }
-    footer .container-footer {
-      flex-direction: column;
-      flex-grow: auto; }
-      footer .container-footer .footer-columna {
-        margin: auto;
-        text-align: center; }
-  .logo {
-    margin: 0; } }
-
-/* BLOG */
-@media screen and (max-width: 768px) {
-  .entrada-texto {
-    text-align: center;
-    max-inline-size: 22rem;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px; }
-  #imagen-nosotros {
-    max-width: 300px; } }
-
-/* INDEX */
-@media screen and (max-width: 768px) {
-  .container {
-    margin: 0; }
-  .logo-interno {
-    max-width: 350px; } }
-
-/* NOSOTROS */
-@media screen and (max-width: 768px) {
-  .seccion-nosotros {
-    flex-direction: column; }
-  .flex-about-us {
-    flex-direction: column; }
-  .presentacion {
-    margin: auto; }
-    .presentacion p {
-      max-inline-size: 17rem;
-      margin-left: 1rem; } }
-
-/* PRODUCTOS */
-@media screen and (max-width: 768px) {
-  .galeria-productos {
-    width: 100vw; }
-  .flex-productos {
-    width: 100vw; }
-  td {
-    display: block;
-    margin: auto; }
-  thead {
-    display: none; } }
-
 main #titulo-blog, main .blog-temas {
   color: whitesmoke;
   text-align: center;
@@ -299,14 +189,15 @@ main .blog {
     main .blog .entrada .entrada-texto {
       background-color: #ff7a2f;
       padding: 5px;
-      font-size: 1rem;
-      opacity: 0;
-      transition: 1s;
-      width: 25rem; }
-      main .blog .entrada .entrada-texto h3 {
-        font-size: 1.3rem; }
+      font-size: 1rem; }
+      main .blog .entrada .entrada-texto .titulo-post {
+        text-justify: center;
+        color: #005d44;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.5rem; }
       main .blog .entrada .entrada-texto h4 {
-        font-size: 1.1rem;
+        font-family: 'Lora', serif;
+        font-size: 1rem;
         color: whitesmoke; }
     main .blog .entrada .btn-leer-mas {
       background-color: black;
@@ -318,9 +209,7 @@ main .blog {
       font-size: 1,5rem;
       border-radius: 12px;
       -webkit-border-radius: 12px;
-      -moz-border-radius: 12px;
-      opacity: 0;
-      transition: 1s; }
+      -moz-border-radius: 12px; }
       main .blog .entrada .btn-leer-mas:hover {
         background-color: transparent;
         color: black;
@@ -340,6 +229,16 @@ main .blog {
     max-inline-size: 24rem;
     margin: 2rem;
     font-weight: bold; }
+  .flex-about-us .columna-about-us .destacado {
+    font-size: 2rem;
+    color: #7a0204;
+    margin-right: 2rem; }
+  .flex-about-us .columna-about-us .nivel-texto.dos {
+    color: black;
+    font-size: 1.1rem; }
+  .flex-about-us .columna-about-us .nivel-texto {
+    color: #7a0204;
+    font-size: 1.1rem; }
   .flex-about-us .columna-about-us.dos {
     background-color: #005d44;
     max-inline-size: 28rem;
@@ -539,26 +438,49 @@ main .blog {
 
 .container-eventos {
   display: flex;
-  width: 97vw;
+  margin: auto;
+  margin-top: 2rem;
+  width: 80vw;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: purple;
+  opacity: 0.8; }
   .container-eventos .tabla-eventos {
     border-collapse: collapse;
     margin: 2rem;
     min-width: 400px; }
+
+.tabla-eventos th {
+  background-color: black;
+  color: whitesmoke;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  text-shadow: currentColor, 1rem; }
 
 .tabla-eventos th,
 .tabla-eventos td {
   padding: 1rem;
   max-inline-size: 15rem;
   text-align: justify; }
+  .tabla-eventos th li,
+  .tabla-eventos td li {
+    list-style: circle;
+    line-height: 2rem;
+    font-family: 'Lora', serif;
+    font-weight: bold; }
+
+.fecha {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  text-shadow: 4px 4px black; }
 
 .tabla-eventos tbody tr {
   border-bottom: 1px solid #ffbfbf;
   color: white; }
 
 .titulo-peli {
-  font-size: 1.7rem; }
+  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive; }
 
 #kwaidan {
   background-image: url(../multimedia/kwaidan.jpg);
@@ -589,8 +511,11 @@ main .blog {
   .flex-productos .columna-productos p {
     max-inline-size: 22rem;
     margin: 2rem; }
+    .flex-productos .columna-productos p .bold {
+      font-weight: bold; }
   .flex-productos .columna-productos h2 {
-    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
     max-inline-size: 20rem;
     color: whitesmoke;
     font-family: 'Bebas Neue', cursive; }
@@ -768,3 +693,135 @@ main .blog {
       color: blanchedalmond;
       border-color: blanchedalmond;
       font-weight: bold; }
+
+/*  Barra navegacion */
+@media screen and (max-width: 768px) {
+  /*  Barra navegacion */
+  html, body {
+    overflow-x: hidden; }
+  body {
+    position: relative; }
+  .nav-container {
+    flex-direction: column; }
+    .nav-container .nav-menu-items {
+      flex-direction: column;
+      margin-top: 1rem; }
+      .nav-container .nav-menu-items .nav-menu-links {
+        margin-top: 0; }
+      .nav-container .nav-menu-items .link-nav {
+        pointer-events: none; }
+        .nav-container .nav-menu-items .link-nav .icon.ion-md-arrow-dropright {
+          display: inline; }
+        .nav-container .nav-menu-items .link-nav .icon.ion-ios-arrow-down {
+          display: none; }
+      .nav-container .nav-menu-items #nav-item-productos:hover #submenu-productos {
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: #005d44;
+        margin-top: -2.1rem;
+        width: 9.5rem;
+        margin-left: 10rem;
+        border-radius: 0 1rem 1rem 1rem; }
+      .nav-container .nav-menu-items #nav-item-blog:hover #submenu-blog {
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: #005d44;
+        margin-top: -2.1rem;
+        width: 9.5rem;
+        margin-left: 10rem;
+        border-radius: 0 1rem 1rem 1rem; }
+      .nav-container .nav-menu-items #nav-item-contacto:hover #submenu-contacto {
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: #005d44;
+        margin-top: -2.1rem;
+        width: 9.5rem;
+        margin-left: 10rem;
+        border-radius: 0 1rem 1rem 1rem; } }
+
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  #social-media {
+    margin-left: 37%;
+    margin-top: 3rem; }
+  .logo a {
+    margin-right: 4rem; } }
+
+@media screen and (max-width: 768px) {
+  /* FOOTER */
+  footer {
+    width: 100vw; }
+    footer .container-footer {
+      flex-direction: column;
+      flex-grow: auto; }
+      footer .container-footer .footer-columna {
+        margin: auto;
+        text-align: center; }
+  .logo {
+    margin: 0; } }
+
+/* BLOG */
+@media screen and (max-width: 768px) {
+  .entrada-texto {
+    text-align: center;
+    max-inline-size: 22rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px; }
+  #imagen-nosotros {
+    max-width: 300px; } }
+
+@media screen and (min-width: 900px) {
+  .entrada-texto {
+    opacity: 0;
+    transition: 1s;
+    width: 25rem; } }
+
+@media screen and (min-width: 900px) {
+  .btn-leer-mas {
+    background-color: transparent;
+    margin-left: 35%;
+    margin-top: 28%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 1,5rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    opacity: 0;
+    transition: 1s; } }
+
+/* INDEX */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0; }
+  .logo-interno {
+    max-width: 350px; } }
+
+/* NOSOTROS */
+@media screen and (max-width: 768px) {
+  .seccion-nosotros {
+    flex-direction: column; }
+  .flex-about-us {
+    flex-direction: column; }
+  .presentacion {
+    margin: auto; }
+    .presentacion p {
+      max-inline-size: 17rem;
+      margin-left: 1rem; } }
+
+/* PRODUCTOS */
+@media screen and (max-width: 768px) {
+  .galeria-productos {
+    width: 100vw; }
+  .flex-productos {
+    width: 100vw;
+    flex-direction: column; }
+  td {
+    display: block;
+    margin: auto; }
+  thead {
+    display: none; } }

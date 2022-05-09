@@ -4,7 +4,7 @@
     margin: auto;
     justify-content: center;
     text-align: justify;
-    background-color:map-get($map: $paleta, $key: 'naranjo' );;
+    background-color:map-get($map: $paleta, $key: 'naranjo' );
     margin-bottom: 2rem;
     .columna-about-us p{
         max-inline-size: 24rem;
@@ -12,8 +12,23 @@
         font-weight: bold;
     }
     
+    .columna-about-us .destacado{
+        font-size: 2rem;
+        color: map-get($map: $paleta, $key: 'burdeo');
+        margin-right: 2rem;
+    }
+
+    .columna-about-us .nivel-texto.dos{
+        color: black;
+        font-size: 1.1rem;
+    }
+    .columna-about-us .nivel-texto{
+        color: map-get($map: $paleta, $key: 'burdeo');
+        font-size: 1.1rem;
+    }
+
     .columna-about-us.dos{
-        background-color: map-get($map: $paleta, $key: 'verde-oscuro' );;
+        background-color: map-get($map: $paleta, $key: 'verde-oscuro');
         max-inline-size: 28rem;
         color: blanchedalmond;
     }
